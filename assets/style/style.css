@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #0f172a;
+    font-family: 'Quicksand', sans-serif;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.navigasi {
+    background-color: #0f172a;
+    background-size: cover;
+    font-size: 20px;
+    padding: 60px;
+    text-align: center;
+    color: white;
+}
+
+.navigasi p {
+    color: #909eb2;
+}
+
+nav {
+    background-color: rgb(18, 15, 70);
+    padding: 5px;
+    position: sticky;
+    top: 0;
+}
+
+nav ul {
+    justify-content: right;
+    padding-inline: 4rem;
+    display: flex;
+    gap: 2rem;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+nav a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #909eb2;
+}
+
+nav a:hover {
+    font-weight: bold;
+    color: white;
+}
+
+@media screen and (max-width: 1000px) {
+    nav ul {
+        justify-content: center;
+    }
+
+    #content,
+    aside {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        justify-content: center;
+    }
+
+    main aside {
+        align-self: stretch;
+    }
+}
+
+main {
+    padding: 15px;
+    gap: 1.5rem;
+}
+
+.card {
+    background-color: #2c354a;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    color: white;
+}
+
+.card p {
+    color: #909eb2;
+}
+
+h2,
+h3 {
+    color: #ffffff;
+}
+
+.featured-images {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+#content {
+    flex: 5;
+
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem 2rem;
+}
+
+aside {
+    flex: 1;
+}
+
+header {
+    display: inline;
+}
+
+img {
+    width: 200px;
+}
+
+.gambar {
+    width: 500px;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+}
+
+.responsive h3 {
+    text-align: center;
+}
+
+div.scroll-container {
+    background-color: #333;
+    overflow: auto;
+    white-space: nowrap;
+    padding: 10px;
+    display: flex;
+}
+
+div.scroll-container img {
+    padding: 10px;
+}
+
+.desc {
+    text-align: center;
+}
